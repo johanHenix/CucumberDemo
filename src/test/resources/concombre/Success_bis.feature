@@ -11,11 +11,16 @@ Feature: Stock Management is OK
       Then I've at least 1 products in stock
 
     @Success
-    Scenario: Stock ' success
+    Scenario: Stock "" success
       When I count everything I have in stock
       Then I've at least 1 products in stock
 
     @Success
-    Scenario: Stock &é"'(-è_çà)=$^*ù!:;,1234567890°+£¨µ%§/.? success
+    Scenario: Stock '' success
+      When I count everything I have in stock
+      Then I've at least 1 products in stock
+
+    @Success
+    Scenario: Stock &é""''(-è_çà)=$^*ù!:;,1234567890°+£¨µ%§/.? success
       When I count everything I have in stock
       Then I've at least 1 products in stock
